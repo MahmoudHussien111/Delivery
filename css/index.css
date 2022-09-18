@@ -1,0 +1,97 @@
+body {
+  font-family: "Montserrat", sans-serif;
+}
+.container {
+  width: 1170px;
+  margin: 0 auto;
+}
+/* Start Landing page */
+.landing {
+  background-image: url("../image/-1.jpg");
+  background-size: cover;
+  width: 100%;
+  height: 100vh;
+  position: relative;
+  overflow: hidden;
+}
+.landing .overlay {
+  position: absolute;
+  top: 0;
+  width: 58%;
+  translate: 0.3s;
+  height: 110%;
+  background-color: #673ab7b0;
+  border-radius: 18px;
+  transform: rotate(23deg);
+  left: -303px;
+  box-shadow: 0 0 42px 11px #685252, 0 0 10px #564f4f inset;
+  z-index: 1;
+}
+.header .container {
+  height: 65px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 2;
+  position: relative;
+  margin-bottom: 100px;
+}
+.header .logo {
+  font-weight: bold;
+  color: #fff;
+}
+.header ul {
+  display: flex;
+  list-style: none;
+}
+.header ul li {
+  margin: 20px;
+}
+.content {
+  position: relative;
+  z-index: 2;
+}
+.content h2 {
+  font-size: 36px;
+  width: 339px;
+  color: #fff;
+}
+.content p {
+  font-size: 18px;
+  color: #fff;
+  width: 430px;
+  line-height: 1.8;
+}
+.content .email {
+  display: flex;
+  flex-direction: column;
+}
+.content .email label {
+  margin-bottom: 15px;
+  color: #fff;
+  font-weight: bold;
+}
+.content .email input:not([type="submit"]) {
+  width: 269px;
+  padding: 6px;
+  position: relative;
+  outline: none;
+}
+.content .email input[type="submit"] {
+  width: fit-content;
+  margin-top: 15px;
+  padding: 5px 10px;
+  background: #f00;
+  border: none;
+  color: #fff;
+  font-weight: bold;
+  border-radius: 4px;
+} /* End Landing page */
+@keyframes rotat {
+  0% {
+    transform: rotate(23deg);
+  }
+  100% {
+    transform: rotate(121deg);
+  }
+}
